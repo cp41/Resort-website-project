@@ -1,0 +1,236 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #4a4a4a;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #1e90ff;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header-content .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.header-content nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.header-content nav a:hover {
+    color: #007BFF;
+}
+
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #4a4a4a;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #1e90ff;
+}
+.hero {
+    background-color: #67c6e0;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.hero button {
+    padding: 0.75rem 1.5rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.hero button:hover {
+    background-color: #1c86ee;
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.featured-rooms, .amenities, .gallery {
+    padding: 4rem 0;
+}
+.featured-rooms .room, .amenities .amenity, .gallery .gallery-item {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.featured-rooms .room:hover, .amenities .amenity:hover, .gallery .gallery-item:hover {
+    transform: scale(1.05);
+}
+.featured-rooms .room img, .gallery .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.featured-rooms .room .content, .amenities .amenity .content {
+    padding: 1rem;
+}
+.featured-rooms .room .content h3, .amenities .amenity .content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.featured-rooms .room .content p, .amenities .amenity .content p {
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+}
+.featured-rooms .room .content button {
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.featured-rooms .room .content button:hover {
+    background-color: #1c86ee;
+}
+.amenities .amenity i {
+    font-size: 2rem;
+    color: #1e90ff;
+}
+.amenities .amenity .content h3 {
+    margin-top: 0.5rem;
+}
+
+
+footer {
+    background-color: #080202;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer-container nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-container nav a {
+    color: #f4f5f7;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer-container nav a:hover {
+    color: #f4f5f7;
+}
+.footer-container p {
+    color: #f4f5f7;
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+.social-icons a {
+    color: #f4f5f7;
+    font-size: 1.25rem;
+}
+.social-icons a:hover {
+    color: #f4f5f7;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer-content div {
+    text-align: left;
+}
+.footer-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f4f5f7;
+    margin-bottom: 0.5rem;
+}
+.footer-content p {
+    color: #f4f5f7;
+    margin: 0.5rem 0;
+}
+@media (min-width: 640px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-content {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .featured-rooms .rooms, .amenities .amenities-list, .gallery .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .amenities .amenities-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
